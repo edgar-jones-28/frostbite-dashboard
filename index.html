@@ -88,13 +88,13 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
 <body>
 <main>
   <h1>Reorder decision — batch summary</h1>
-  <p class="sub">5 rounds evaluated. Reorder when weeks of supply falls below 4 weeks
+  <p class="sub">6 rounds evaluated. Reorder when weeks of supply falls below 4 weeks
   (3-week lead time + 1-week safety buffer); orders restock to 8 weeks of supply.</p>
 
   <div class="kpis">
-    <div class="kpi"><div class="label">Rounds evaluated</div><div class="value">5</div></div>
-    <div class="kpi"><div class="label">Reorder decisions</div><div class="value">3 of 5</div></div>
-    <div class="kpi"><div class="label">Total units to order</div><div class="value">4,628</div></div>
+    <div class="kpi"><div class="label">Rounds evaluated</div><div class="value">6</div></div>
+    <div class="kpi"><div class="label">Reorder decisions</div><div class="value">4 of 6</div></div>
+    <div class="kpi"><div class="label">Total units to order</div><div class="value">6,110</div></div>
   </div>
 
   <section class="card">
@@ -104,7 +104,7 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
       <thead><tr><th>Round</th><th>Month</th><th class="num">Forecast</th><th class="num">Inventory</th>
       <th class="num">Weekly demand</th><th class="num">Weeks of supply</th><th>Decision</th><th class="num">Order qty</th></tr></thead>
       <tbody>
-      <tr class="hold"><td>Round A</td><td>July</td><td class="num">1,544</td><td class="num">1,450</td><td class="num">356.6</td><td class="num">4.07</td><td><span class="badge hold"><span aria-hidden="true">●</span> HOLD</span></td><td class="num"><span class="muted">—</span></td></tr><tr class="reorder"><td>Round B</td><td>October</td><td class="num">1,046</td><td class="num">700</td><td class="num">241.6</td><td class="num">2.90</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">1,233</td></tr><tr class="reorder"><td>Round C</td><td>January</td><td class="num">890</td><td class="num">620</td><td class="num">205.5</td><td class="num">3.02</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">1,024</td></tr><tr class="reorder"><td>Round D</td><td>February</td><td class="num">1,500</td><td class="num">400</td><td class="num">346.4</td><td class="num">1.15</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">2,371</td></tr><tr class="hold"><td>Round E</td><td>March</td><td class="num">1,300</td><td class="num">1,350</td><td class="num">300.2</td><td class="num">4.50</td><td><span class="badge hold"><span aria-hidden="true">●</span> HOLD</span></td><td class="num"><span class="muted">—</span></td></tr>
+      <tr class="hold"><td>Round A</td><td>July</td><td class="num">1,544</td><td class="num">1,450</td><td class="num">356.6</td><td class="num">4.07</td><td><span class="badge hold"><span aria-hidden="true">●</span> HOLD</span></td><td class="num"><span class="muted">—</span></td></tr><tr class="reorder"><td>Round B</td><td>October</td><td class="num">1,046</td><td class="num">700</td><td class="num">241.6</td><td class="num">2.90</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">1,233</td></tr><tr class="reorder"><td>Round C</td><td>January</td><td class="num">890</td><td class="num">620</td><td class="num">205.5</td><td class="num">3.02</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">1,024</td></tr><tr class="reorder"><td>Round D</td><td>February</td><td class="num">1,500</td><td class="num">400</td><td class="num">346.4</td><td class="num">1.15</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">2,371</td></tr><tr class="hold"><td>Round E</td><td>March</td><td class="num">1,300</td><td class="num">1,350</td><td class="num">300.2</td><td class="num">4.50</td><td><span class="badge hold"><span aria-hidden="true">●</span> HOLD</span></td><td class="num"><span class="muted">—</span></td></tr><tr class="reorder"><td>Round F</td><td>April</td><td class="num">1,100</td><td class="num">550</td><td class="num">254.0</td><td class="num">2.17</td><td><span class="badge reorder"><span aria-hidden="true">▲</span> REORDER NOW</span></td><td class="num">1,482</td></tr>
       </tbody>
     </table>
     </div>
@@ -124,40 +124,47 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
 <line class="grid" x1="48" x2="544" y1="20.0" y2="20.0"/>
 <text class="tick" x="40" y="24.0" text-anchor="end">6</text>
 <g class="bar hold"><title>Round A (July): 4.07 wk — HOLD</title>
-<rect class="hit" x="52.0" y="20" width="91.2" height="188"/>
-<path class="mark" d="M72.8,208.0 V84.6 Q72.8,80.6 76.8,80.6 H118.4 Q122.4,80.6 122.4,84.6 V208.0 Z"/>
-<text class="value" x="97.6" y="72.6" text-anchor="middle">4.07 wk</text>
+<rect class="hit" x="52.0" y="20" width="74.7" height="188"/>
+<path class="mark" d="M68.7,208.0 V84.6 Q68.7,80.6 72.7,80.6 H106.0 Q110.0,80.6 110.0,84.6 V208.0 Z"/>
+<text class="value" x="89.3" y="72.6" text-anchor="middle">4.07 wk</text>
 </g>
-<text class="cat" x="97.6" y="228" text-anchor="middle">Round A</text>
-<text class="cat-sub" x="97.6" y="244" text-anchor="middle">July</text>
+<text class="cat" x="89.3" y="228" text-anchor="middle">Round A</text>
+<text class="cat-sub" x="89.3" y="244" text-anchor="middle">July</text>
 <g class="bar reorder"><title>Round B (October): 2.90 wk — REORDER NOW</title>
-<rect class="hit" x="151.2" y="20" width="91.2" height="188"/>
-<path class="mark" d="M172.0,208.0 V121.2 Q172.0,117.2 176.0,117.2 H217.6 Q221.6,117.2 221.6,121.2 V208.0 Z"/>
-<text class="value" x="196.8" y="109.2" text-anchor="middle">2.90 wk</text>
+<rect class="hit" x="134.7" y="20" width="74.7" height="188"/>
+<path class="mark" d="M151.3,208.0 V121.2 Q151.3,117.2 155.3,117.2 H188.7 Q192.7,117.2 192.7,121.2 V208.0 Z"/>
+<text class="value" x="172.0" y="109.2" text-anchor="middle">2.90 wk</text>
 </g>
-<text class="cat" x="196.8" y="228" text-anchor="middle">Round B</text>
-<text class="cat-sub" x="196.8" y="244" text-anchor="middle">October</text>
+<text class="cat" x="172.0" y="228" text-anchor="middle">Round B</text>
+<text class="cat-sub" x="172.0" y="244" text-anchor="middle">October</text>
 <g class="bar reorder"><title>Round C (January): 3.02 wk — REORDER NOW</title>
-<rect class="hit" x="250.4" y="20" width="91.2" height="188"/>
-<path class="mark" d="M271.2,208.0 V117.5 Q271.2,113.5 275.2,113.5 H316.8 Q320.8,113.5 320.8,117.5 V208.0 Z"/>
-<text class="value" x="296.0" y="105.5" text-anchor="middle">3.02 wk</text>
+<rect class="hit" x="217.3" y="20" width="74.7" height="188"/>
+<path class="mark" d="M234.0,208.0 V117.5 Q234.0,113.5 238.0,113.5 H271.3 Q275.3,113.5 275.3,117.5 V208.0 Z"/>
+<text class="value" x="254.7" y="105.5" text-anchor="middle">3.02 wk</text>
 </g>
-<text class="cat" x="296.0" y="228" text-anchor="middle">Round C</text>
-<text class="cat-sub" x="296.0" y="244" text-anchor="middle">January</text>
+<text class="cat" x="254.7" y="228" text-anchor="middle">Round C</text>
+<text class="cat-sub" x="254.7" y="244" text-anchor="middle">January</text>
 <g class="bar reorder"><title>Round D (February): 1.15 wk — REORDER NOW</title>
-<rect class="hit" x="349.6" y="20" width="91.2" height="188"/>
-<path class="mark" d="M370.4,208.0 V175.8 Q370.4,171.8 374.4,171.8 H416.0 Q420.0,171.8 420.0,175.8 V208.0 Z"/>
-<text class="value" x="395.2" y="163.8" text-anchor="middle">1.15 wk</text>
+<rect class="hit" x="300.0" y="20" width="74.7" height="188"/>
+<path class="mark" d="M316.7,208.0 V175.8 Q316.7,171.8 320.7,171.8 H354.0 Q358.0,171.8 358.0,175.8 V208.0 Z"/>
+<text class="value" x="337.3" y="163.8" text-anchor="middle">1.15 wk</text>
 </g>
-<text class="cat" x="395.2" y="228" text-anchor="middle">Round D</text>
-<text class="cat-sub" x="395.2" y="244" text-anchor="middle">February</text>
+<text class="cat" x="337.3" y="228" text-anchor="middle">Round D</text>
+<text class="cat-sub" x="337.3" y="244" text-anchor="middle">February</text>
 <g class="bar hold"><title>Round E (March): 4.50 wk — HOLD</title>
-<rect class="hit" x="448.8" y="20" width="91.2" height="188"/>
-<path class="mark" d="M469.6,208.0 V71.1 Q469.6,67.1 473.6,67.1 H515.2 Q519.2,67.1 519.2,71.1 V208.0 Z"/>
-<text class="value" x="494.4" y="59.1" text-anchor="middle">4.50 wk</text>
+<rect class="hit" x="382.7" y="20" width="74.7" height="188"/>
+<path class="mark" d="M399.3,208.0 V71.1 Q399.3,67.1 403.3,67.1 H436.7 Q440.7,67.1 440.7,71.1 V208.0 Z"/>
+<text class="value" x="420.0" y="59.1" text-anchor="middle">4.50 wk</text>
 </g>
-<text class="cat" x="494.4" y="228" text-anchor="middle">Round E</text>
-<text class="cat-sub" x="494.4" y="244" text-anchor="middle">March</text>
+<text class="cat" x="420.0" y="228" text-anchor="middle">Round E</text>
+<text class="cat-sub" x="420.0" y="244" text-anchor="middle">March</text>
+<g class="bar reorder"><title>Round F (April): 2.17 wk — REORDER NOW</title>
+<rect class="hit" x="465.3" y="20" width="74.7" height="188"/>
+<path class="mark" d="M482.0,208.0 V144.2 Q482.0,140.2 486.0,140.2 H519.3 Q523.3,140.2 523.3,144.2 V208.0 Z"/>
+<text class="value" x="502.7" y="132.2" text-anchor="middle">2.17 wk</text>
+</g>
+<text class="cat" x="502.7" y="228" text-anchor="middle">Round F</text>
+<text class="cat-sub" x="502.7" y="244" text-anchor="middle">April</text>
 <line class="axis" x1="48" x2="544" y1="208.0" y2="208.0"/>
 <line class="threshold" x1="48" x2="544" y1="82.7" y2="82.7"/>
 </svg>
@@ -183,38 +190,45 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
 <line class="grid" x1="48" x2="544" y1="20.0" y2="20.0"/>
 <text class="tick" x="40" y="24.0" text-anchor="end">3,000</text>
 <g class="bar hold"><title>Round A (July): 0 (HOLD) — HOLD</title>
-<rect class="hit" x="52.0" y="20" width="91.2" height="188"/>
-<text class="value" x="97.6" y="200.0" text-anchor="middle">0 (HOLD)</text>
+<rect class="hit" x="52.0" y="20" width="74.7" height="188"/>
+<text class="value" x="89.3" y="200.0" text-anchor="middle">0 (HOLD)</text>
 </g>
-<text class="cat" x="97.6" y="228" text-anchor="middle">Round A</text>
-<text class="cat-sub" x="97.6" y="244" text-anchor="middle">July</text>
+<text class="cat" x="89.3" y="228" text-anchor="middle">Round A</text>
+<text class="cat-sub" x="89.3" y="244" text-anchor="middle">July</text>
 <g class="bar reorder"><title>Round B (October): 1,233 — REORDER NOW</title>
-<rect class="hit" x="151.2" y="20" width="91.2" height="188"/>
-<path class="mark" d="M172.0,208.0 V134.7 Q172.0,130.7 176.0,130.7 H217.6 Q221.6,130.7 221.6,134.7 V208.0 Z"/>
-<text class="value" x="196.8" y="122.7" text-anchor="middle">1,233</text>
+<rect class="hit" x="134.7" y="20" width="74.7" height="188"/>
+<path class="mark" d="M151.3,208.0 V134.7 Q151.3,130.7 155.3,130.7 H188.7 Q192.7,130.7 192.7,134.7 V208.0 Z"/>
+<text class="value" x="172.0" y="122.7" text-anchor="middle">1,233</text>
 </g>
-<text class="cat" x="196.8" y="228" text-anchor="middle">Round B</text>
-<text class="cat-sub" x="196.8" y="244" text-anchor="middle">October</text>
+<text class="cat" x="172.0" y="228" text-anchor="middle">Round B</text>
+<text class="cat-sub" x="172.0" y="244" text-anchor="middle">October</text>
 <g class="bar reorder"><title>Round C (January): 1,024 — REORDER NOW</title>
-<rect class="hit" x="250.4" y="20" width="91.2" height="188"/>
-<path class="mark" d="M271.2,208.0 V147.8 Q271.2,143.8 275.2,143.8 H316.8 Q320.8,143.8 320.8,147.8 V208.0 Z"/>
-<text class="value" x="296.0" y="135.8" text-anchor="middle">1,024</text>
+<rect class="hit" x="217.3" y="20" width="74.7" height="188"/>
+<path class="mark" d="M234.0,208.0 V147.8 Q234.0,143.8 238.0,143.8 H271.3 Q275.3,143.8 275.3,147.8 V208.0 Z"/>
+<text class="value" x="254.7" y="135.8" text-anchor="middle">1,024</text>
 </g>
-<text class="cat" x="296.0" y="228" text-anchor="middle">Round C</text>
-<text class="cat-sub" x="296.0" y="244" text-anchor="middle">January</text>
+<text class="cat" x="254.7" y="228" text-anchor="middle">Round C</text>
+<text class="cat-sub" x="254.7" y="244" text-anchor="middle">January</text>
 <g class="bar reorder"><title>Round D (February): 2,371 — REORDER NOW</title>
-<rect class="hit" x="349.6" y="20" width="91.2" height="188"/>
-<path class="mark" d="M370.4,208.0 V63.4 Q370.4,59.4 374.4,59.4 H416.0 Q420.0,59.4 420.0,63.4 V208.0 Z"/>
-<text class="value" x="395.2" y="51.4" text-anchor="middle">2,371</text>
+<rect class="hit" x="300.0" y="20" width="74.7" height="188"/>
+<path class="mark" d="M316.7,208.0 V63.4 Q316.7,59.4 320.7,59.4 H354.0 Q358.0,59.4 358.0,63.4 V208.0 Z"/>
+<text class="value" x="337.3" y="51.4" text-anchor="middle">2,371</text>
 </g>
-<text class="cat" x="395.2" y="228" text-anchor="middle">Round D</text>
-<text class="cat-sub" x="395.2" y="244" text-anchor="middle">February</text>
+<text class="cat" x="337.3" y="228" text-anchor="middle">Round D</text>
+<text class="cat-sub" x="337.3" y="244" text-anchor="middle">February</text>
 <g class="bar hold"><title>Round E (March): 0 (HOLD) — HOLD</title>
-<rect class="hit" x="448.8" y="20" width="91.2" height="188"/>
-<text class="value" x="494.4" y="200.0" text-anchor="middle">0 (HOLD)</text>
+<rect class="hit" x="382.7" y="20" width="74.7" height="188"/>
+<text class="value" x="420.0" y="200.0" text-anchor="middle">0 (HOLD)</text>
 </g>
-<text class="cat" x="494.4" y="228" text-anchor="middle">Round E</text>
-<text class="cat-sub" x="494.4" y="244" text-anchor="middle">March</text>
+<text class="cat" x="420.0" y="228" text-anchor="middle">Round E</text>
+<text class="cat-sub" x="420.0" y="244" text-anchor="middle">March</text>
+<g class="bar reorder"><title>Round F (April): 1,482 — REORDER NOW</title>
+<rect class="hit" x="465.3" y="20" width="74.7" height="188"/>
+<path class="mark" d="M482.0,208.0 V119.1 Q482.0,115.1 486.0,115.1 H519.3 Q523.3,115.1 523.3,119.1 V208.0 Z"/>
+<text class="value" x="502.7" y="107.1" text-anchor="middle">1,482</text>
+</g>
+<text class="cat" x="502.7" y="228" text-anchor="middle">Round F</text>
+<text class="cat-sub" x="502.7" y="244" text-anchor="middle">April</text>
 <line class="axis" x1="48" x2="544" y1="208.0" y2="208.0"/>
 </svg>
       <div class="legend"><span><span class="swatch reorder"></span>REORDER NOW</span>
